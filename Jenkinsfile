@@ -1,8 +1,7 @@
 pipeline {
     agent {
         dockerfile {
-            label 'Linux_Docker'
-            filename 'ansible.Dockerfile'
+            true
                 }
     }
 
