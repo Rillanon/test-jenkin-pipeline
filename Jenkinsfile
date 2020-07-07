@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        dockerfile {
+            label 'Linux_Docker'
+            filename 'ansible.Dockerfile'
+                }
+    }
 
     stages {
         stage('Build') {
